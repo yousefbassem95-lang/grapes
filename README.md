@@ -1,3 +1,5 @@
+<img width="640" height="784" alt="Screenshot from 2026-01-02 04-56-35" src="https://github.com/user-attachments/assets/79b7f51e-e2de-4957-820f-1d65668dc3db" />
+
 # 🍇 GRAPES
 ### **High-Fidelity ASCII Art Generator**
 *Transform images and video into stunning terminal art with AI-powered precision*
