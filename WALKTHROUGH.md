@@ -37,7 +37,7 @@ wget https://storage.googleapis.com/mediapipe-models/image_segmenter/selfie_segm
 
 ### Step 5: Verify Installation
 ```bash
-python grapes.py --help
+python3 grapes.py --help
 ```
 
 ---
@@ -46,25 +46,25 @@ python grapes.py --help
 
 ### Convert an Image to ASCII
 ```bash
-python grapes.py photo.jpg
+python3 grapes.py photo.jpg
 ```
 **Output**: Standard ASCII art in your terminal
 
 ### Adjust Width
 ```bash
-python grapes.py photo.jpg --width 120
+python3 grapes.py photo.jpg --width 120
 ```
 **Output**: Wider ASCII art (more detail)
 
 ### Enable Color
 ```bash
-python grapes.py photo.jpg --color
+python3 grapes.py photo.jpg --color
 ```
 **Output**: Full 16.7M color ASCII art
 
 ### Save to File
 ```bash
-python grapes.py photo.jpg -o output.txt
+python3 grapes.py photo.jpg -o output.txt
 ```
 **Output**: ASCII art saved to `output.txt`
 
@@ -74,7 +74,7 @@ python grapes.py photo.jpg -o output.txt
 
 ### Portrait Mode (Recommended for People)
 ```bash
-python grapes.py selfie.jpg --mode portrait
+python3 grapes.py selfie.jpg --mode portrait
 ```
 **What it does**:
 - Activates Neural AI for subject detection
@@ -86,7 +86,7 @@ python grapes.py selfie.jpg --mode portrait
 
 ### Neon Mode (Cyberpunk Aesthetic)
 ```bash
-python grapes.py cityscape.jpg --mode neon
+python3 grapes.py cityscape.jpg --mode neon
 ```
 **What it does**:
 - Boosts color saturation by 1.8x
@@ -98,7 +98,7 @@ python grapes.py cityscape.jpg --mode neon
 
 ### Matrix Mode (Green Hacker Style)
 ```bash
-python grapes.py code.jpg --mode matrix
+python3 grapes.py code.jpg --mode matrix
 ```
 **What it does**:
 - Renders everything in green gradient
@@ -109,7 +109,7 @@ python grapes.py code.jpg --mode matrix
 
 ### Thermal Mode (Heat Map)
 ```bash
-python grapes.py person.jpg --mode thermal
+python3 grapes.py person.jpg --mode thermal
 ```
 **What it does**:
 - Maps brightness to temperature colors
@@ -120,7 +120,7 @@ python grapes.py person.jpg --mode thermal
 
 ### Sketch Mode (Pencil Drawing)
 ```bash
-python grapes.py portrait.jpg --mode sketch
+python3 grapes.py portrait.jpg --mode sketch
 ```
 **What it does**:
 - Detects edges in the image
@@ -131,7 +131,7 @@ python grapes.py portrait.jpg --mode sketch
 
 ### Pixel Mode (Retro 8-Bit)
 ```bash
-python grapes.py game.jpg --mode pixel
+python3 grapes.py game.jpg --mode pixel
 ```
 **What it does**:
 - Forces low resolution (max 50 chars wide)
@@ -148,7 +148,7 @@ python grapes.py game.jpg --mode pixel
 Doubles vertical resolution using sub-pixel rendering.
 
 ```bash
-python grapes.py photo.jpg --hd --width 100
+python3 grapes.py photo.jpg --hd --width 100
 ```
 
 **Technical Details**:
@@ -163,7 +163,7 @@ python grapes.py photo.jpg --hd --width 100
 AI-powered subject isolation using MediaPipe.
 
 ```bash
-python grapes.py person.jpg --brain --focus
+python3 grapes.py person.jpg --brain --focus
 ```
 
 **What it does**:
@@ -178,7 +178,7 @@ python grapes.py person.jpg --brain --focus
 Automatically crops to the subject.
 
 ```bash
-python grapes.py group_photo.jpg --crop
+python3 grapes.py group_photo.jpg --crop
 ```
 
 **Algorithm**:
@@ -194,7 +194,7 @@ python grapes.py group_photo.jpg --crop
 Extract and highlight specific colors.
 
 ```bash
-python grapes.py flower.jpg --target-color purple
+python3 grapes.py flower.jpg --target-color purple
 ```
 
 **Available Colors**:
@@ -207,7 +207,7 @@ python grapes.py flower.jpg --target-color purple
 Blueprint-style line art.
 
 ```bash
-python grapes.py building.jpg --edge
+python3 grapes.py building.jpg --edge
 ```
 
 **Algorithm**:
@@ -221,7 +221,7 @@ python grapes.py building.jpg --edge
 
 ### Launch the Wizard
 ```bash
-python grapes.py
+python3 grapes.py
 ```
 
 ### Wizard Flow
@@ -267,19 +267,19 @@ The wizard simulates "deep thinking" and auto-configures optimal settings.
 
 ### Basic Webcam Stream
 ```bash
-python grapes.py --video
+python3 grapes.py --video
 ```
 **Output**: Real-time ASCII video from webcam 0
 
 ### HD Webcam with AI
 ```bash
-python grapes.py --video --hd --brain --crop
+python3 grapes.py --video --hd --brain --crop
 ```
 **Output**: High-fidelity, AI-cropped live stream
 
 ### Select Webcam
 ```bash
-python grapes.py --video --webcam 1
+python3 grapes.py --video --webcam 1
 ```
 **Use Case**: Multiple cameras (0, 1, 2, etc.)
 
@@ -333,31 +333,31 @@ wget https://storage.googleapis.com/mediapipe-models/image_segmenter/selfie_segm
 ### Quick Reference
 ```bash
 # Portrait with AI
-python grapes.py photo.jpg --mode portrait
+python3 grapes.py photo.jpg --mode portrait
 
 # Cyberpunk neon
-python grapes.py city.jpg --mode neon
+python3 grapes.py city.jpg --mode neon
 
 # Matrix green
-python grapes.py code.jpg --mode matrix
+python3 grapes.py code.jpg --mode matrix
 
 # Thermal heat map
-python grapes.py person.jpg --mode thermal
+python3 grapes.py person.jpg --mode thermal
 
 # Pencil sketch
-python grapes.py face.jpg --mode sketch
+python3 grapes.py face.jpg --mode sketch
 
 # Retro pixel art
-python grapes.py game.jpg --mode pixel
+python3 grapes.py game.jpg --mode pixel
 
 # Manual HD + AI + Crop
-python grapes.py photo.jpg --hd --brain --crop --width 120
+python3 grapes.py photo.jpg --hd --brain --crop --width 120
 
 # Live webcam portrait
-python grapes.py --video --mode portrait
+python3 grapes.py --video --mode portrait
 
 # Save colored output
-python grapes.py photo.jpg --mode neon -o neon_art.txt
+python3 grapes.py photo.jpg --mode neon -o neon_art.txt
 ```
 
 ---

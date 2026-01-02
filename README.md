@@ -40,16 +40,16 @@ wget https://storage.googleapis.com/mediapipe-models/image_segmenter/selfie_segm
 
 ```bash
 # Simple ASCII conversion
-python grapes.py photo.jpg
+python3 grapes.py photo.jpg
 
 # High-fidelity with AI isolation
-python grapes.py photo.jpg --mode portrait
+python3 grapes.py photo.jpg --mode portrait
 
 # Matrix-style rendering
-python grapes.py photo.jpg --mode matrix
+python3 grapes.py photo.jpg --mode matrix
 
 # Real-time webcam
-python grapes.py --video
+python3 grapes.py --video
 ```
 
 ---
@@ -59,42 +59,42 @@ python grapes.py --video
 ### **Portrait Mode** (`--mode portrait`)
 Optimized for human subjects with AI-powered cropping and high detail.
 ```bash
-python grapes.py selfie.jpg --mode portrait
+python3 grapes.py selfie.jpg --mode portrait
 ```
 **Features**: Auto-crop, Neural AI, Complex charset
 
 ### **Neon Mode** (`--mode neon`)
 Cyberpunk aesthetic with vibrant colors and HD rendering.
 ```bash
-python grapes.py cityscape.jpg --mode neon
+python3 grapes.py cityscape.jpg --mode neon
 ```
 **Features**: Color boost (1.8x saturation), HD, Hybrid charset
 
 ### **Matrix Mode** (`--mode matrix`)
 Classic green-on-black hacker aesthetic.
 ```bash
-python grapes.py code.jpg --mode matrix
+python3 grapes.py code.jpg --mode matrix
 ```
 **Features**: Green gradient, Complex charset
 
 ### **Thermal Mode** (`--mode thermal`)
 Heat map visualization (Blue → Yellow → Red).
 ```bash
-python grapes.py landscape.jpg --mode thermal
+python3 grapes.py landscape.jpg --mode thermal
 ```
 **Features**: Temperature color mapping, Block charset
 
 ### **Sketch Mode** (`--mode sketch`)
 Pencil drawing effect with edge detection.
 ```bash
-python grapes.py portrait.jpg --mode sketch
+python3 grapes.py portrait.jpg --mode sketch
 ```
 **Features**: Directional hatching, Edge detection
 
 ### **Pixel Mode** (`--mode pixel`)
 Retro 8-bit pixel art style.
 ```bash
-python grapes.py game_screenshot.jpg --mode pixel
+python3 grapes.py game_screenshot.jpg --mode pixel
 ```
 **Features**: Block charset, Color quantization, Low resolution
 
@@ -106,39 +106,39 @@ python grapes.py game_screenshot.jpg --mode pixel
 
 ```bash
 # HD Mode + Neural AI + Smart Crop
-python grapes.py photo.jpg --hd --brain --crop --width 120
+python3 grapes.py photo.jpg --hd --brain --crop --width 120
 
 # Color isolation (extract specific color)
-python grapes.py flower.jpg --target-color purple
+python3 grapes.py flower.jpg --target-color purple
 
 # Edge detection blueprint
-python grapes.py building.jpg --edge
+python3 grapes.py building.jpg --edge
 
 # Custom charset
-python grapes.py photo.jpg --charset hybrid --color
+python3 grapes.py photo.jpg --charset hybrid --color
 ```
 
 ### Video Streaming
 
 ```bash
 # Basic webcam stream
-python grapes.py --video
+python3 grapes.py --video
 
 # HD webcam with AI focus
-python grapes.py --video --hd --brain --crop
+python3 grapes.py --video --hd --brain --crop
 
 # Webcam ID selection
-python grapes.py --video --webcam 1
+python3 grapes.py --video --webcam 1
 ```
 
 ### Save Output
 
 ```bash
 # Save to file
-python grapes.py photo.jpg --mode neon -o output.txt
+python3 grapes.py photo.jpg --mode neon -o output.txt
 
 # Redirect to file (preserves ANSI colors)
-python grapes.py photo.jpg --mode matrix > matrix_art.ans
+python3 grapes.py photo.jpg --mode matrix > matrix_art.ans
 ```
 
 ---
@@ -148,7 +148,7 @@ python grapes.py photo.jpg --mode matrix > matrix_art.ans
 Run without arguments to launch the **Cognitive Interface**:
 
 ```bash
-python grapes.py
+python3 grapes.py
 ```
 
 The wizard will guide you through:
@@ -205,31 +205,31 @@ The AI will auto-configure optimal settings based on your choices.
 
 ### Example 1: Professional Headshot
 ```bash
-python grapes.py headshot.jpg --mode portrait --width 100
+python3 grapes.py headshot.jpg --mode portrait --width 100
 ```
 **Output**: AI-cropped, high-detail portrait with clean background isolation.
 
 ### Example 2: Cyberpunk Cityscape
 ```bash
-python grapes.py city.jpg --mode neon --hd --width 150
+python3 grapes.py city.jpg --mode neon --hd --width 150
 ```
 **Output**: Vibrant neon colors with sub-pixel HD rendering.
 
 ### Example 3: Code Matrix Effect
 ```bash
-python grapes.py code_editor.png --mode matrix --width 80
+python3 grapes.py code_editor.png --mode matrix --width 80
 ```
 **Output**: Green-on-black Matrix-style rendering.
 
 ### Example 4: Thermal Camera Simulation
 ```bash
-python grapes.py person.jpg --mode thermal --width 100
+python3 grapes.py person.jpg --mode thermal --width 100
 ```
 **Output**: Blue-to-red heat map visualization.
 
 ### Example 5: Live Webcam Portrait
 ```bash
-python grapes.py --video --mode portrait
+python3 grapes.py --video --mode portrait
 ```
 **Output**: Real-time AI-powered portrait stream.
 
